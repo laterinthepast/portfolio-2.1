@@ -8,8 +8,9 @@ import img4 from '../images/10.jpg'
 import Contact from '../components/Contact';
 
 const Wrapper = styled.div`
-    @media screen and (max-width:1000px){
-        padding-top:15vh;
+    margin-top: 100px;
+    @media screen and (max-width:1400px){
+       
 }
 `
 const PageContainer = styled.div`

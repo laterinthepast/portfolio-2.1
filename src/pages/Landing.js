@@ -28,14 +28,15 @@ const LeftSideTitle = styled.div`
     }
     @media screen and (max-width:1000px){
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         align-items: flex-start;
         padding: 2rem;
         p {
         font-size: 1rem;
         width: 70%;
     }
-    
+    overflow-x: hidden; 
+    overflow-y: auto;
     }
 `
 const Landing = styled.div`

@@ -26,6 +26,10 @@ const Wrapper = styled.div`
         }
         
     }
+    @media screen and (max-width:1000px) {
+        box-shadow: none;
+    }
+    
 `
 const Heading = styled.div`
     text-align: center;

@@ -7,7 +7,7 @@
   font-family: 'Dela Gothic One', cursive;
 }
 
-body {
+html, body {
   height: 100%;
   width: 100%;
 }
