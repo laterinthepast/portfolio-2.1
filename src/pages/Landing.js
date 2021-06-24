@@ -5,16 +5,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Link } from "react-router-dom";
 
+const Landing = styled.div`
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+    z-index: -1;
+    @media screen and (max-width:1000px){
+        
+        
+    }
+`
 
 const LeftSideTitle = styled.div`
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    height: 60vh;
+    height: 100vh;
     letter-spacing: 2px;
     color: #fff;
-    width: 40%;
+    margin-left:2rem;
+    z-index: 999;
     p {
         font-size: 1.5rem;
         width: 100%;
@@ -28,32 +42,16 @@ const LeftSideTitle = styled.div`
     }
     @media screen and (max-width:1000px){
         height: 100vh;
-        width: 100vw;
         align-items: flex-start;
-        padding: 2rem;
+        padding: 0rem;
         p {
         font-size: 1rem;
         width: 70%;
     }
-    overflow-x: hidden; 
-    overflow-y: auto;
-    }
-`
-const Landing = styled.div`
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
-    display:flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #000;
     
-    position:relative;
-    @media screen and (max-width:1000px){
-        flex-wrap: wrap;
-        z-index: 999;
     }
 `
+
 
 const RightSideImg = styled.div`
     height: 100vh;
@@ -62,11 +60,10 @@ const RightSideImg = styled.div`
     }
 
 @media screen and (max-width:1000px){
-    position: fixed;
-    margin-right: -400px ;
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    transform:translate(50%);
 }
 `
 
@@ -87,7 +84,7 @@ const Links = styled.div`
         justify-content: space-evenly; 
     }
     @media screen and (max-width:1000px){
-        height: 10%;
+        height: 5%;
     }
 `
 
@@ -100,8 +97,8 @@ function LandingMain() {
                     <h1>Hello,</h1>
                     <h2>I am Rafal</h2>
                 </div>
-                <p>I am a front-end developer based in London. This is just the beginning for me.
-                    Simple spacious designs and easy peasy lemon squeezy builds that's what I do best.
+                <p>Front-end developer based in London. This is just the beginning for me.
+                    Simple, spacious designs and easy peasy lemon squeezy builds. That's what I do best.
                 </p>
                 <Links>
                     <h3> <Link to="/work">my work</Link></h3>

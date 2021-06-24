@@ -23,6 +23,7 @@ const PageContainer = styled.div`
        
 }
 `
+
 function WorkSection() {
     return (
         <Wrapper>
@@ -45,7 +46,7 @@ function WorkSection() {
                 />
                 <Page
                     src={img3}
-                    title="Quartz Scientific"
+                    title="Quartz"
                     path="https://cocky-northcutt-9c570f.netlify.app/"
                     Git="https://github.com/laterinthepast/quartz-website"
                     Link="https://cocky-northcutt-9c570f.netlify.app/"

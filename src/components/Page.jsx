@@ -6,20 +6,18 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     .footer_icons{
         display: flex;
         justify-content: space-evenly;
-        width: 100%;
+        align-items:flex-end;
         font-size: 50px;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         a {
         text-decoration: none;
         color: #000;    
-        text-align: center;
+        
         }
         
     }
@@ -33,7 +31,7 @@ const Heading = styled.div`
     text-align: center;
     padding: 1.2rem;
     font-size:2rem;
-    color: #e63946;
+    color: #14213d;
     @media screen and (max-width:1000px) {
     font-size: 1rem;
     }
@@ -62,6 +60,16 @@ const Info = styled.div`
     p {
         font-size: 1.2rem;
         line-height: 3rem;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+    }
+    @media screen and (max-width:1000px) {
+        padding: 1rem;
+        
+        p {
+            font-size: 1rem;
+           line-height: 2rem; 
+        }
     }
 `
 
