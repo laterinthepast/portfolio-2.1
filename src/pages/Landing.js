@@ -35,7 +35,7 @@ const LeftSideTitle = styled.div`
     }
     h1{
         font-size: 3rem;
-        color: red;
+        color: #fca311;
     }
     h2 {
         font-size: 2rem;
@@ -82,6 +82,10 @@ const Links = styled.div`
         width: 50%;
         display: flex;
         justify-content: space-evenly; 
+        a {
+            color:#fca311;
+        }
+        
     }
     @media screen and (max-width:1000px){
         height: 5%;
