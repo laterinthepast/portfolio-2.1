@@ -6,17 +6,17 @@ import { faInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-sv
 import { Link } from "react-router-dom";
 
 const Landing = styled.div`
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
     display:flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #000;
     z-index: -1;
     @media screen and (max-width:1000px){
-        
-        
+        overflow-x: hidden; 
+        overflow-y: auto;
+        max-height: 100vh;
     }
+    
 `
 
 const LeftSideTitle = styled.div`
@@ -27,8 +27,8 @@ const LeftSideTitle = styled.div`
     height: 100vh;
     letter-spacing: 2px;
     color: #fff;
-    margin-left:2rem;
-    z-index: 999;
+    margin-left:0.5rem;
+    z-index: 2;
     p {
         font-size: 1.5rem;
         width: 100%;
@@ -40,38 +40,40 @@ const LeftSideTitle = styled.div`
     h2 {
         font-size: 2rem;
     }
-    @media screen and (max-width:1000px){
-        height: 100vh;
-        align-items: flex-start;
-        padding: 0rem;
+     @media screen and (max-width:1000px){
+    height: 100vh;
+    align-items: flex-start;
+    padding: 0rem;
         p {
-        font-size: 1rem;
-        width: 70%;
+    font-size: 1rem;
+    width: 70%;
     }
-    
     }
 `
 
-
 const RightSideImg = styled.div`
     height: 100vh;
+    position:relative;
     img {
         height: 100%;
     }
 
-@media screen and (max-width:1000px){
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    transform:translate(50%);
+    @media screen and (max-width:1024px){
+        
+        
+    img {
+        position: absolute;
+        top: 0;
+        right: -200px;
+        
+    }
 }
 `
-
 const Links = styled.div`
     height: 30%;
     width:100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     a {
             text-decoration: none;
@@ -84,16 +86,13 @@ const Links = styled.div`
         justify-content: space-evenly; 
         a {
             color:#fca311;
-        }
-        
+        }   
     }
     @media screen and (max-width:1000px){
-        height: 5%;
+        
     }
 `
-
 function LandingMain() {
-
     return (
         <Landing>
             <LeftSideTitle>
@@ -112,16 +111,12 @@ function LandingMain() {
                         <a href="https://www.linkedin.com/in/rafal-wrona/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
                     </div>
                 </Links>
-
-
             </LeftSideTitle>
             <RightSideImg>
-                <img src={imgLanding} alt="" />
+                <img src={imgLanding} alt="landing" />
             </RightSideImg>
         </Landing>
-
     )
-
 }
 
 export default LandingMain
