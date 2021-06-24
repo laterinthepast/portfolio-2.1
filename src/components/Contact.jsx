@@ -8,7 +8,7 @@ const Footer = styled.div`
     left: 50%;
     transform: translateX(-50%);
     background-color: yellow;
-   
+    width: 100%;
     display: flex;
     height: 100px;
     align-items: center;
@@ -26,7 +26,7 @@ const Footer = styled.div`
             color: #000;
         }
     }
-    @media screen and (max-width:1400px){
+    @media screen and (max-width:1000px){
         border-radius: 0 0 100px 100px;
         .icons {
             padding: 0;

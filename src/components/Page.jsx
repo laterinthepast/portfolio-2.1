@@ -9,16 +9,13 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-   
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-    
     .footer_icons{
         display: flex;
         justify-content: space-evenly;
         width: 100%;
         font-size: 50px;
         padding-bottom: 2rem;
-        
         a {
         text-decoration: none;
         color: #000;    
@@ -28,6 +25,7 @@ const Wrapper = styled.div`
     }
     @media screen and (max-width:1000px) {
         box-shadow: none;
+        width: 100%;
     }
     
 `
@@ -36,6 +34,9 @@ const Heading = styled.div`
     padding: 1.2rem;
     font-size:2rem;
     color: #e63946;
+    @media screen and (max-width:1000px) {
+    font-size: 1rem;
+    }
 `
 const ImgSection = styled.div`
     text-align: center;
@@ -48,6 +49,11 @@ const ImgSection = styled.div`
         box-shadow: rgba(149, 157, 165, 0.2) 10px 10px 50px;
         text-align: center;
     }
+    @media screen and (max-width:1000px) {
+        img {
+            width: 100%;
+    }
+}
 
 `
 const Info = styled.div`
@@ -58,6 +64,7 @@ const Info = styled.div`
         line-height: 3rem;
     }
 `
+
 
 function Page(props) {
     return (
