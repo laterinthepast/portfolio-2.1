@@ -29,6 +29,10 @@ const LeftSideTitle = styled.div`
     color: #fff;
     margin-left:0.5rem;
     z-index: 2;
+    .blinker {
+        animation:blink 1s infinite linear;
+    }
+
     p {
         font-size: 1.5rem;
         width: 100%;
@@ -39,6 +43,7 @@ const LeftSideTitle = styled.div`
     }
     h2 {
         font-size: 2rem;
+        
     }
      @media screen and (max-width:1000px){
     height: 100vh;
@@ -59,12 +64,12 @@ const RightSideImg = styled.div`
     }
 
     @media screen and (max-width:1024px){
-        
+        background-color: #000;
         
     img {
         position: absolute;
         top: 0;
-        right: -200px;
+        right: -100px;
         
     }
 }
@@ -97,7 +102,7 @@ function LandingMain() {
         <Landing>
             <LeftSideTitle>
                 <div>
-                    <h1>Hello,</h1>
+                    <h1>Hello<span className="blinker">,</span></h1>
                     <h2>I am Rafal</h2>
                 </div>
                 <p>Front-end developer based in London. This is just the beginning for me.
