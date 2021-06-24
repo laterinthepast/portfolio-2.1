@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Oswald:wght@400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Oswald:wght@400;600&display=swap'); */
+
+@font-face {
+    font-family: 'Dela Gothic One';
+    src: url('../images/fonts/Dela/DelaGothicOne-Regular.ttf') format('truetype'),
+  }
+  @font-face {
+    font-family: 'Monserrat';
+    src: url('../images/fonts/monserat/Montserrat-SemiBold.ttf') format('truetype'),
+  }
+
+
+
 
 * {
 

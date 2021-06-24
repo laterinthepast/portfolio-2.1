@@ -44,7 +44,7 @@ const ImgSection = styled.div`
     justify-content: space-evenly;
     img {
         width: 500px;
-        box-shadow: rgba(149, 157, 165, 0.2) 10px 10px 50px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
         text-align: center;
     }
     @media screen and (max-width:1000px) {
