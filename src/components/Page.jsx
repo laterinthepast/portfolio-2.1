@@ -54,7 +54,6 @@ const Info = styled.div`
     p {
         font-size: 1.2rem;
         line-height: 3rem;
-        font-family: 'Oswald', sans-serif;
         font-weight: 600;
     }
     @media screen and (max-width:1000px) {
