@@ -8,7 +8,14 @@ import { Link } from "react-router-dom";
 const Landing = styled.div`
     display:flex;
     background-color: #000;
-    max-height: 100vh;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    
+    
     @media screen and (max-width:1000px){
         overflow-x: hidden; 
         overflow-y: auto;
@@ -48,12 +55,16 @@ const LeftSideTitle = styled.div`
 `
 const RightSideImg = styled.div`
     height: 100vh;
+    background-image: url('../images/landing.jpg');
+    
     img {
         max-height: 100%;
+        
     }
     @media screen and (max-width:1024px){
         z-index: 0;   
     img {
+        
         position: absolute;
         height: 100vh;
         top: 0;
@@ -101,9 +112,9 @@ function LandingMain() {
                     </div>
                 </Links>
             </LeftSideTitle>
-            <RightSideImg>
+            {/* <RightSideImg>
                 <img src={imgLanding} alt="landing" />
-            </RightSideImg>
+            </RightSideImg> */}
         </Landing>
     )
 }
