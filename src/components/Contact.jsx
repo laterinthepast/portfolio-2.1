@@ -30,7 +30,6 @@ const Footer = styled.div`
         justify-content: center;
         align-items: center;
         font-size: 2rem;
-        
         a {
             margin: 1rem;
             text-decoration: none;
@@ -43,27 +42,22 @@ const Footer = styled.div`
         flex-direction: column;
         .icons {
             padding: 0;
-        a {
-            margin: 0.5rem;
-
+            a {
+                margin: 0.5rem;
+            }
         }
-    }
     }
 
 `
-
 function Contact() {
     return (
         <Footer>
             <a href="/" className="goback"><FontAwesomeIcon icon={faArrowLeft} /></a>
-            <p>
-                lookmummy@gmail.com
-            </p>
+            <p>lookmummy@gmail.com</p>
             <div className="icons">
                 <a href="https://github.com/laterinthepast"><FontAwesomeIcon icon={faGithub} /></a>
                 <a href="https://www.instagram.com/lookmummyicancode/"><FontAwesomeIcon icon={faInstagram} /></a>
                 <a href="https://www.linkedin.com/in/rafal-wrona/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                
             </div>
         </Footer>
     )

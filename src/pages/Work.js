@@ -9,21 +9,15 @@ import Contact from '../components/Contact';
 
 const Wrapper = styled.div`
     margin-top: 100px;
-    @media screen and (max-width:1400px){
-       
-}
 `
 const PageContainer = styled.div`
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); 
     @media screen and (max-width:1000px){
        display: flex;
-       flex-wrap: wrap;
-       
-}
+       flex-wrap: wrap;    
+    }
 `
-
 function WorkSection() {
     return (
         <Wrapper>

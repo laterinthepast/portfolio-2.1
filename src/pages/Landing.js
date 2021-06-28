@@ -6,7 +6,6 @@ import { faInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-sv
 import { Link } from "react-router-dom";
 
 const Landing = styled.div`
-
     display:flex;
     background-color: #000;
     max-height: 100vh;
@@ -14,8 +13,7 @@ const Landing = styled.div`
         overflow-x: hidden; 
         overflow-y: auto;
         max-height: 100vh;
-    }
-    
+    } 
 `
 const LeftSideTitle = styled.div`
     display:flex;
@@ -38,7 +36,6 @@ const LeftSideTitle = styled.div`
     }
     h2 {
         font-size: 2rem;
-        
     }
      @media screen and (max-width:1024px){
          z-index: 1;
@@ -54,16 +51,13 @@ const RightSideImg = styled.div`
     img {
         max-height: 100%;
     }
-
     @media screen and (max-width:1024px){
-        z-index: 0;
-        
+        z-index: 0;   
     img {
         position: absolute;
         height: 100vh;
         top: 0;
-        right: -50%;
-        
+        right: -50%; 
     }
 }
 `
@@ -74,8 +68,8 @@ const Links = styled.div`
     justify-content: flex-start;
     align-items: center;
     a {
-            text-decoration: none;
-            color: #fff;
+        text-decoration: none;
+        color: #fff;
         }
     .icons {
         font-size: 2rem;
@@ -85,9 +79,6 @@ const Links = styled.div`
         a {
             color:#fca311;
         }   
-    }
-    @media screen and (max-width:1000px){
-        
     }
 `
 function LandingMain() {
