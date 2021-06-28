@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import imgLanding from '../images/landing.jpg'
+/* import imgLanding from '../images/landing.jpg' */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Link } from "react-router-dom";
@@ -53,7 +53,7 @@ const LeftSideTitle = styled.div`
         }
     }
 `
-const RightSideImg = styled.div`
+/* const RightSideImg = styled.div`
     height: 100vh;
     background-image: url('../images/landing.jpg');
     
@@ -71,7 +71,7 @@ const RightSideImg = styled.div`
         right: -50%; 
     }
 }
-`
+` */
 const Links = styled.div`
     height: 30%;
     width:100%;
