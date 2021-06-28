@@ -7,10 +7,8 @@ import { Link } from "react-router-dom";
 
 const Landing = styled.div`
     display:flex;
-    justify-content: space-evenly;
-    align-items: center;
     background-color: #000;
-    z-index: -1;
+    max-height: 100vh;
     @media screen and (max-width:1000px){
         overflow-x: hidden; 
         overflow-y: auto;
@@ -18,23 +16,19 @@ const Landing = styled.div`
     }
     
 `
-
 const LeftSideTitle = styled.div`
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    height: 100vh;
-    letter-spacing: 2px;
+    justify-content: center;
+    align-items: stretch;
+    letter-spacing: 1px;
     color: #fff;
-    margin-left:0.5rem;
-    z-index: 2;
+    margin-left:3rem;
     .blinker {
         animation:blink 1s infinite linear;
     }
-
     p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         width: 100%;
     }
     h1{
@@ -45,31 +39,29 @@ const LeftSideTitle = styled.div`
         font-size: 2rem;
         
     }
-     @media screen and (max-width:1000px){
-    height: 100vh;
-    align-items: flex-start;
-    padding: 0rem;
+     @media screen and (max-width:1024px){
+         z-index: 1;
+        margin:1rem;
+        width:80%;
         p {
-    font-size: 1rem;
-    width: 70%;
-    }
+    font-size: 1.2rem;
+        }
     }
 `
-
 const RightSideImg = styled.div`
     height: 100vh;
-    position:relative;
     img {
-        height: 100%;
+        max-height: 100%;
     }
 
     @media screen and (max-width:1024px){
-        background-color: #000;
+        z-index: 0;
         
     img {
         position: absolute;
+        height: 100vh;
         top: 0;
-        right: -100px;
+        right: -50%;
         
     }
 }
