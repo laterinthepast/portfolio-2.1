@@ -6,6 +6,7 @@ import { faInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-sv
 import { Link } from "react-router-dom";
 
 const Landing = styled.div`
+
     display:flex;
     background-color: #000;
     max-height: 100vh;
