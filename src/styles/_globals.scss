@@ -1,27 +1,82 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); */
 @font-face {
-    font-family: 'Dela Gothic One';
-    src: url('../images/fonts/Dela/DelaGothicOne-Regular.ttf') format('truetype'),
-  } 
+  font-family: "Dela Gothic One";
+  src: url("../images/fonts/Dela/DelaGothicOne-Regular.ttf") format("truetype");
+}
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html {
-    width: 100%;
-    height: 100%;
-    font-family: 'Dela Gothic One', cursive;
+  width: 100%;
+  height: 100%;
+  font-family: "Dela Gothic One", cursive;
 }
 /* ANIMATIONS */
-@keyframes blink  {
-  49%{
-      opacity: 1;
+
+/* TEXT SLIDING */
+@keyframes fadein {
+  from {
+    opacity: 0;
   }
-  50% {
-      opacity: 0;
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
   }
   100% {
-      opacity: 0;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* BLINK */
+@keyframes blink {
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* TEXT SHAKE */
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: /* translateX(-25px) */ rotate(30deg);
+  }
+
+  50% {
+    transform: /* translateX(-25px) */ rotate(-30deg);
+  }
+  100% {
+    transform: /* translateX(0px)  */ rotate(0);
   }
 }

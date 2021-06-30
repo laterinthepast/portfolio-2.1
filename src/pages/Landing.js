@@ -23,6 +23,8 @@ const Landing = styled.div`
     } 
 `
 const LeftSideTitle = styled.div`
+    animation: fadein 4.2s, 1s ease-out 0s 1 slideInFromLeft ;
+    /* animation: ; */
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -33,13 +35,19 @@ const LeftSideTitle = styled.div`
     .blinker {
         animation:blink 1s infinite linear;
     }
+    
     p {
         font-size: 1.6rem;
         width: 100%;
+        animation: fadein 4.2s, 2s ease-out 0s 1 slideInFromLeft ;
+        
     }
     h1{
         font-size: 3rem;
         color: #fca311;
+    }
+    h1,h2 {
+        animation: fadein 4.2s, 5s ease-out 0s 1 slideInFromTop ;
     }
     h2 {
         font-size: 2rem;
@@ -78,9 +86,16 @@ const Links = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    animation: fadein 4.2s, 3s ease-out 0s 1 slideInFromBottom ;
+    h3 {
+        :hover{
+        animation:  shake 0.3s;
+        }
+    }
     a {
         text-decoration: none;
         color: #fff;
+        
         }
     .icons {
         font-size: 2rem;
@@ -89,6 +104,9 @@ const Links = styled.div`
         justify-content: space-evenly; 
         a {
             color:#fca311;
+            :hover {
+                transform: scale(1.1);
+            }
         }   
     }
 `
@@ -100,7 +118,7 @@ function LandingMain() {
                     <h1>Hello<span className="blinker">,</span></h1>
                     <h2>I am Rafal</h2>
                 </div>
-                <p>Front-end developer based in London. This is just the beginning for me.
+                <p className="fadeIn">Front-end developer based in London. This is just the beginning for me.
                     Simple, spacious designs and easy peasy lemon squeezy builds. That's what I do best.
                 </p>
                 <Links>
