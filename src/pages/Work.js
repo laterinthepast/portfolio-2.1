@@ -9,10 +9,11 @@ import Contact from '../components/Contact';
 
 const Wrapper = styled.div`
     margin-top: 100px;
+    max-width:100%;
 `
 const PageContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
     @media screen and (max-width:1000px){
        display: flex;
        flex-wrap: wrap;    

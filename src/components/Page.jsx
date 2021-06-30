@@ -6,7 +6,9 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 
 const Wrapper = styled.div`
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    border-radius:20px;
+    margin: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     .footer_icons{
         display: flex;
         justify-content: space-evenly;
@@ -21,12 +23,14 @@ const Wrapper = styled.div`
     @media screen and (max-width:1000px) {
         box-shadow: none;
         width: 100%;
+        margin: 0;
     } 
 `
 const Heading = styled.div`
+    
     text-align: center;
     padding: 1.2rem;
-    font-size:2rem;
+    font-size:1.3rem;
     color: #14213d;
     @media screen and (max-width:1000px) {
         font-size: 1rem;
@@ -39,7 +43,7 @@ const ImgSection = styled.div`
     align-items: center;
     justify-content: space-evenly;
     img {
-        width: 500px;
+        width: 100%;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
         text-align: center;
     }
