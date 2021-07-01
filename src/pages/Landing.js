@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-/* import imgLanding from '../images/landing.jpg' */
+import imgLanding from '../images/landing.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Link } from "react-router-dom";
@@ -9,17 +9,19 @@ const Landing = styled.div`
     display:flex;
     background-color: #000;
     height: 100vh;
-    background-image: url("https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80");
+    background-image: url("${imgLanding}");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 80% 10%;
     background-attachment: fixed;
     
     
     @media screen and (max-width:1000px){
-        overflow-x: hidden; 
-        overflow-y: auto;
-        max-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25%;
+    
+
     } 
 `
 const LeftSideTitle = styled.div`
@@ -32,6 +34,7 @@ const LeftSideTitle = styled.div`
     letter-spacing: 1px;
     color: #fff;
     margin-left:3rem;
+    width: 50%;
     .blinker {
         animation:blink 1s infinite linear;
     }
@@ -53,9 +56,9 @@ const LeftSideTitle = styled.div`
         font-size: 2rem;
     }
      @media screen and (max-width:1024px){
-         z-index: 1;
+        
         margin:1rem;
-        width:80%;
+        width:75%;
         p {
     font-size: 1.2rem;
         }
@@ -113,6 +116,7 @@ const Links = styled.div`
 function LandingMain() {
     return (
         <Landing>
+
             <LeftSideTitle>
                 <div>
                     <h1>Hello<span className="blinker">,</span></h1>
