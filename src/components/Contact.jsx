@@ -54,7 +54,7 @@ function Contact() {
     return (
         <Footer>
             <a href="/" className="goback"><FontAwesomeIcon icon={faArrowLeft} /></a>
-            <p>lookmummy@gmail.com</p>
+            <p>lookmummyicancode@gmail.com</p>
             <div className="icons">
                 <a href="https://github.com/laterinthepast"><FontAwesomeIcon icon={faGithub} /></a>
                 <a href="https://www.instagram.com/lookmummyicancode/"><FontAwesomeIcon icon={faInstagram} /></a>
