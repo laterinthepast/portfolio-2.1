@@ -93,26 +93,27 @@ const Links = styled.div`
         align-items: center;
         font-size: 1rem;
         border-radius: 20px;
-        padding: 10px;
+        padding: 15px;
         transition: 0.2s ease-in-out;
         letter-spacing: 4px;
-        text-shadow:
-        0 0 7px #fff,
+        background-color: #fff;
+        
+        box-shadow: 0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
         0 0 42px #fca311,
         0 0 82px #fca311,
         0 0 92px #fca311,
         0 0 102px #fca311,
-        0 0 151px #fca311;
-        
+        0 0 151px #fca311; ;
+        animation:blink 1s infinite linear;
         :hover{
         animation:  shake 0.5s;
         }
     }
     a {
         text-decoration: none;
-        color: #fff;
+        color: #000;
         
         }
     .icons {
