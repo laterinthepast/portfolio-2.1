@@ -10,16 +10,15 @@ const Landing = styled.div`
     background-color: #000;
     height: 100vh;
     background-image: url("${imgLanding}");
-    background-size: cover;
+    background-size: 60%;
     background-repeat: no-repeat;
-    background-position: 25%;
-    background-attachment: fixed;
+    background-position: right;
+    
     
     
     @media screen and (max-width:1000px){
-    
-    
-
+    background-size:cover;
+    background-position:25%;
     } 
 `
 const LeftSideTitle = styled.div`

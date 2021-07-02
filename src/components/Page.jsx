@@ -17,7 +17,7 @@ const Wrapper = styled.div`
         padding-bottom: 1rem;
         a {
             text-decoration: none;
-            color: #000;    
+            color: #fff;    
         }
     }
     @media screen and (max-width:1000px) {
