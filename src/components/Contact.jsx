@@ -25,6 +25,7 @@ const Footer = styled.div`
             top:38px;
         }
     }
+
     .icons {
         display: flex;
         justify-content: center;

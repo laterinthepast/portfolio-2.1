@@ -88,8 +88,26 @@ const Links = styled.div`
     align-items: center;
     animation: fadein 4.2s, 3s ease-out 0s 1 slideInFromBottom ;
     h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border-radius: 20px;
+        padding: 10px;
+        transition: 0.2s ease-in-out;
+        letter-spacing: 4px;
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #fca311,
+        0 0 82px #fca311,
+        0 0 92px #fca311,
+        0 0 102px #fca311,
+        0 0 151px #fca311;
+        
         :hover{
-        animation:  shake 0.3s;
+        animation:  shake 0.5s;
         }
     }
     a {
