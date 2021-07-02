@@ -37,7 +37,7 @@ const Footer = styled.div`
         }
     }
     @media screen and (max-width:1000px){
-        border-radius: 0 0 100px 100px;
+        border-radius: 0;
         display: flex;
         flex-direction: column;
         .icons {

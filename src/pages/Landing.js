@@ -17,9 +17,7 @@ const Landing = styled.div`
     
     
     @media screen and (max-width:1000px){
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 25%;
+    
     
 
     } 
