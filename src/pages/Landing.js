@@ -91,7 +91,7 @@ const Links = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
+        font-size: 1rem;
         border-radius: 20px;
         padding: 10px;
         transition: 0.2s ease-in-out;
