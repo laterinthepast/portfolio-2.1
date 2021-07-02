@@ -107,7 +107,7 @@ const Links = styled.div`
         0 0 92px #fca311,
         0 0 102px #fca311,
         0 0 151px #fca311; ;
-        animation:blink 1s infinite linear;
+        
         :hover{
         animation:  shake 0.5s;
         }
