@@ -91,6 +91,7 @@ const Links = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         font-size: 1rem;
         border-radius: 20px;
         padding: 15px;
@@ -118,7 +119,7 @@ const Links = styled.div`
         }
     .icons {
         font-size: 2rem;
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: space-evenly; 
         a {
