@@ -8,7 +8,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 const Wrapper = styled.div`
     border-radius:20px;
     margin: 2rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     .footer_icons{
         display: flex;
         justify-content: space-evenly;
@@ -31,7 +31,7 @@ const Heading = styled.div`
     text-align: center;
     padding: 1.2rem;
     font-size:1.3rem;
-    color: #14213d;
+    color: #f48c06;
     @media screen and (max-width:1000px) {
         font-size: 1rem;
     }

@@ -10,9 +10,9 @@ const Landing = styled.div`
     background-color: #000;
     height: 100vh;
     background-image: url("${imgLanding}");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 80% 10%;
+    background-position: 25%;
     background-attachment: fixed;
     
     

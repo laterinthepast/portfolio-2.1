@@ -10,6 +10,8 @@ import Contact from '../components/Contact';
 const Wrapper = styled.div`
     margin-top: 100px;
     max-width:100%;
+    background-color: #000 ;
+    color: #fff;
 `
 const PageContainer = styled.div`
     display: grid;
