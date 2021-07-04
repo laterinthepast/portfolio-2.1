@@ -53,7 +53,7 @@ const LeftSideTitle = styled.div`
         font-size: 2rem;
     }
      @media screen and (max-width:1024px){
-        
+        6
         margin:1rem;
         width:75%;
         p {
@@ -93,8 +93,8 @@ const Links = styled.div`
         align-items: center;
         text-align: center;
         font-size: 1rem;
-        border-radius: 20px;
-        padding: 15px;
+        border-radius: 50px;
+        padding: 5px;
         transition: 0.2s ease-in-out;
         letter-spacing: 4px;
         background-color: #fff;
