@@ -22,7 +22,7 @@ const Landing = styled.div`
     } 
 `
 const LeftSideTitle = styled.div`
-    animation: fadein 4.2s, 1s ease-out 0s 1 slideInFromLeft ;
+    animation: fadein 2.2s, 1s ease-out 0s 1 slideInFromLeft ;
     /* animation: ; */
     display:flex;
     flex-direction: column;
@@ -33,13 +33,13 @@ const LeftSideTitle = styled.div`
     margin-left:3rem;
     width: 50%;
     .blinker {
-        animation:blink 1s infinite linear;
+        /* animation:blink 1s infinite linear; */
     }
     
     p {
         font-size: 1.6rem;
         width: 100%;
-        animation: fadein 4.2s, 2s ease-out 0s 1 slideInFromLeft ;
+        /* animation: fadein 4.2s, 2s ease-out 0s 1 slideInFromLeft ; */
         
     }
     h1{
@@ -47,7 +47,7 @@ const LeftSideTitle = styled.div`
         color: #fca311;
     }
     h1,h2 {
-        animation: fadein 4.2s, 5s ease-out 0s 1 slideInFromTop ;
+        /* animation: fadein 4.2s, 5s ease-out 0s 1 slideInFromTop ; */
     }
     h2 {
         font-size: 2rem;
@@ -86,7 +86,7 @@ const Links = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    animation: fadein 4.2s, 3s ease-out 0s 1 slideInFromBottom ;
+    /* animation: fadein 4.2s, 3s ease-out 0s 1 slideInFromBottom ; */
     h3 {
         display: flex;
         justify-content: center;
