@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Page from '../components/Page';
 import img1 from '../images/7.jpg'
 import img2 from '../images/6.jpg'
-import img3 from '../images/ey.jpg'
+/* import img3 from '../images/ey.jpg' */
 import img4 from '../images/10.jpg'
 import Contact from '../components/Contact';
 
