@@ -41,14 +41,14 @@ function WorkSection() {
                     Link="https://mellerdramatic.netlify.app/"
                     description="One of the first projects built with React. Design, build and management of the website. Website will be updated with new designs and tattoo photos. Future development may involve adding a shop for selling Bry's artwork and possibility for NFTs. Website built with React and Sass using styled components."
                 />
-                {/* <Page
+                {/* * <Page
                     src={img3}
                     title="Quartz"
                     path="https://cocky-northcutt-9c570f.netlify.app/"
                     Git="https://github.com/laterinthepast/quartz-website"
                     Link="https://cocky-northcutt-9c570f.netlify.app/"
                     description="Simple landing website for a local business. Design, build and management. Currently awaiting client update. Work in progress"
-                /> */}
+                /> * */}
                 <Page
                     src={img4}
                     title="Cryptofolio"
