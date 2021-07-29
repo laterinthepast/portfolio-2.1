@@ -22,7 +22,7 @@ const Wrapper = styled.div`
     }
     @media screen and (max-width:1000px) {
         box-shadow: none;
-        width: 100%;
+        max-width: 100%;
         margin: 0;
     } 
 `

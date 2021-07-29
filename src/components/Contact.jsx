@@ -15,14 +15,11 @@ const Footer = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
-
-
     .icons {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 2rem;
-        
         a {
             margin: 1rem;
             text-decoration: none;
@@ -33,6 +30,7 @@ const Footer = styled.div`
         border-radius: 0;
         display: flex;
         flex-direction: column;
+        font-size: 0.8rem;
         .icons {
             padding: 0;
             a {

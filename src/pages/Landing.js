@@ -14,11 +14,10 @@ const Landing = styled.div`
     @media screen and (max-width:1000px){
     background-size:cover;
     background-position:25%;
+    padding-left: 0.5rem;
     } 
 `
 const LeftSideTitle = styled.div`
-    animation: fadein 2.2s, 1s ease-out 0s 1 slideInFromLeft ;
-    /* animation: ; */
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -28,31 +27,28 @@ const LeftSideTitle = styled.div`
     margin-left:3rem;
     width: 50%;
     .blinker {
-        /* animation:blink 1s infinite linear; */
+        animation: blink 1s infinite;
     }
-    
     p {
         font-size: 1.6rem;
         width: 100%;
-        /* animation: fadein 4.2s, 2s ease-out 0s 1 slideInFromLeft ; */
-        
     }
     h1{
         font-size: 3rem;
         color: #fca311;
     }
-    h1,h2 {
-        /* animation: fadein 4.2s, 5s ease-out 0s 1 slideInFromTop ; */
-    }
     h2 {
         font-size: 2rem;
     }
      @media screen and (max-width:1024px){
-        
-        margin:1rem;
-        width:75%;
+        margin: 0;
+        width:85%;
+        justify-content: flex-start;
         p {
     font-size: 1.2rem;
+        }
+        h2 {
+            padding-bottom: 2.5rem;
         }
     }
 `
