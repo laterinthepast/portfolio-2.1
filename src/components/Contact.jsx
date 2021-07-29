@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+
 
 const Footer = styled.div`
     position: fixed;
