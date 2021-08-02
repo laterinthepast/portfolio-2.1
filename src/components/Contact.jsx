@@ -43,7 +43,6 @@ const Footer = styled.div`
 function Contact() {
     return (
         <Footer>
-            
             <p>lookmummyicancode@gmail.com</p>
             <div className="icons">
                 <a href="https://github.com/laterinthepast"><FontAwesomeIcon icon={faGithub} /></a>
